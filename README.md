@@ -12,9 +12,6 @@ A ideia inicial é apenas a de listar e poder inserir novos navers e também pro
 
 <h3>Dificuldades</h3>
 <p>Infelizmente o projeto não se concluiu por completo, devido alguns problemas para conectar ao banco de dados mysql, tal como demonstrado no gif abaixo de um dos testes.</p>
-
-<h3>Dificuldades</h3>
-<p>Infelizmente o projeto não se concluiu por completo, devido alguns problemas para conectar ao banco de dados mysql, tal como demonstrado no gif abaixo de um dos testes.</p>
 <img src="https://user-images.githubusercontent.com/43561785/110713709-20a15200-81e1-11eb-9057-89198da60667.gif">
 <p>Para tentar solucionar o problema, tentei utilizar duas formas diferentes de conectar ao banco, uma delas com o seguinte código:</p>
 const mysql = require('mysql');
