@@ -44,3 +44,23 @@ con.end((err) => {
 })
 
 <h4>O qual retornou o seguinte erro:</h4>
+<img src="https://user-images.githubusercontent.com/43561785/110714410-1469c480-81e2-11eb-92ae-0034cd9fe0ac.png">
+<p>A outra forma foi tentando utilizar um código bem diferente para realizar a conexão, instanciando uma pool, da seguinte forma:</p>
+const mysql = require('mysql');
+
+var pool = mysql.createPool({
+    "user": "root",
+    "password": "Transformice231",
+    "database": "naver",
+    "host": "localhost",
+    "port": 3306
+});
+
+exports.pool = pool;
+<p>O qual resultou no erro mostrado no primeiro gif, que aparentemente estabeleceu uma conexão, porém não estava sendo capaz de armazenar os dados no banco e nem de exibir os que já haviam sido inseridos no banco diretamente pelo terminal.Infelizmente isso impediu a aplicação de ser concluída. 😞</p>
+<h4>Todos os códigos da aplicação seguem nas pastas do repositório.</h4>
+<ul>
+    <li>Banco de dados utilizado: MySQL</li>
+    <li>Bibliotecas utilizadas: Express, Nodemon</li>
+    <li>Framework: NodeJs</li>
+</ul>
